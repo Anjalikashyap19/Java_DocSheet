@@ -298,7 +298,7 @@ class AnimalDriver{
 
 *****************************************
 
-9.What is Hierarchical  inheritance expain with example?
+10.What is Hierarchical  inheritance expain with example?
 
 when a parent class have more than one child class in same level then it ois known as , Hierarchical inheritanace.
 
@@ -346,7 +346,7 @@ class AnimalDriver{
 
 ******************************************
 
-10.What is Hybrid  inheritance expain with example??
+11.What is Hybrid  inheritance expain with example??
 
 when a parent class have more than one child class in some at same  level and some at different level then it ois known as , Hierarchical inheritanace. we can also say 
 Hybrid inheritanace have combination of two types of inheritanace.
@@ -399,6 +399,107 @@ class AnimalDriver{
     }
 }
 
+12.What is Multiple inheritance can we  achieve multiple inheritance by class in java?
+it is also a type of inheritance but java does't support this , when a child class have more than one parent class 
+then in child class it will create confusion for compiler to call which class method , and one child class can't able to extends more than one 
+parent class at a time,so it is a ambiguity in java.
+
+**********************************************
+
+13.Expalin Diamond Problem.
+Its a ambiguity for compiler . it aries when we try to achieve Multiple inheritance by using class,in this situation when 
+one child class have more than two parent class , then at the same time child class can't extends more than one class
+so it create confusion for compiler. 
+
+to avoid this we can go through Interface concept in java.
+
+***********************************************
+
+14.Expalin Non-primitive typeCasting.
+the process of converting one non primitive data into another non primitive data,is known as non-primitive 
+type casting.
+we have two tyes--
+Upcasting :- process of converting child class reference into parent class reference , is known as Upcasting.
+it is implicitly done by the compiler, we can do explicite coversion also.
+
+Downcasting :- the process of coverting parent class reference type into child class reference type is know as Downcasting.
+it is explicitly done by the programmer.
+without doing Upcasting we can't perform Downcasting.
+
+15. What is Upcasting , and its Advantage?
+   The process of converting child class reference type into parent type reference type is known as Upcasting.
+   
+   code reuseblity.
+   polymorphism supports.
+   lossely coupling.
+
+16.What is Downcasting ? can we achieve it without Upcasting?
+Downcasting is process of converting parent class reference type into child class reference type is know as Downcasting 
+in Upcasting when we change child class reference tyep into patrent type afterwards we can't able to child class member , becouse 
+we loose their reference . so avoiding this we go with tyhe cocept of Downcasting.
+
+we can't achieve Downcasting without performing Upcasting.
+
+17.What is Class Cast Exeption ?when we will get this and what is the reason for this?
+
+whenever we try to perform downcasting without performing Upcasting , we will get class cast Exeption, it is rutime error .
+reason for this is whenever we try to change parent tyype reference into child class reference we must have the parent type of address in reference variable,
+for that we need to perform Upcasting .
+
+*****************************************************
+
+18 how to check whether instance is present or not? expalain about instanceof operator.
+
+to avoid classcast exeption we use instanceof operator .
+it is a keyword.
+it is also a operator .
+it returns boolean value.
+
+it will check the object reference of object class is present or not ,if it is present it will return true ,
+otherwise false.
+
+19.WAJP to demonstrate non primitive type casting.
+
+class Fruit
+{
+    int a =10;
+    System.out.println(a);
+
+}
+class Apple extends Fruit
+{
+    int b=20;
+    System.out.println(b);
+}
+
+class FruitDriver
+{
+    public static void main(String[] args){
+        Fruit f1=new Apple(); // Upcasting
+        f1.a; // 10
+        f1.b; //CTE
+
+        *********instanceof operator use*************
+
+        Fruit f1 = new Fruit(); //object creation
+         if(f1 instanceof Apple){ // false
+            Apple a1=(Apple)f1;    not executed
+            a1.a;                  not executed
+            a1.b;                  not executed
+         }
 
 
 
+
+
+        ***************
+
+        Apple a1 = (Apple)f1; // Downcasting explicitly
+        a1.a; //10
+        a1.b;//20
+
+
+    }
+}
+
+------------------------------THE END 😃😃😃😄😄-----------------------------
