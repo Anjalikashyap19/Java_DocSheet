@@ -1,0 +1,230 @@
+1.What is Relationship , and what are the types?
+
+Relationship is a term in which one object is connect to  the other object is known as relationship .
+we have two types of relationship -
+Is A 
+Has A --Aggregation and composition
+
+has a relationship is a type of relationship in which one object is dependent on other object .
+it has two types 
+Aggregation
+composition
+
+Aggregation is a type of has a relationship in which one object is partially dependent on other object not fully . in this low dependency is there.
+like human and shoes 
+
+and Composition is a type of has a relationship in which  one object is fully dependent on other . in this high dependency is there.
+like car and engine.
+
+Is A relationship is a type of relationship in which one object inharite the propewrty from other object.it is also term as inheritance.
+
+**********************************************************
+2.What is Has A relationship and types?
+
+has a relationship is a type of relationship in which one object is dependent on other object .
+it has two types 
+Aggregation
+composition
+
+Aggregation is a type of has a relationship in which one object is partially dependent on other object not fully . in this low dependency is there.
+like human and shoes 
+
+and Composition is a type of has a relationship in which  one object is fully dependent on other . in this high dependency is there.
+like car and engine.
+
+***************************************************
+
+3.Explain Composition and How to achieve this?
+Composition define a dependency of two objects in which one object is totaly dependent on other and can't exist without other.
+  
+  example-----
+  class engine
+  {
+    int engineid;
+    engine(int engineid){
+        this.engineid=engineid;
+    }
+  }
+
+  class car{
+    String brand;
+    engine e;// has a relation
+
+    car(String brand,engine e){
+        this.brand=brand;
+        this.e=e;
+    }
+  }
+
+  class carDriver{
+    public static void main(){
+    car c1=new car("bmw" ,new engine(19));
+    System.out.println( c1.brand);//bmw
+    System.out.println( c1.e.brand);//9
+    }
+  }
+
+
+4.Explain Aggragation and how to achieve it?
+
+aggregation is a type of has a  relationship in wich partial dependency is there . one object is dependent on the other but not completely.
+we can achieve aggregation by lazy and late instantiation.
+
+example ---
+
+class SmartWatch
+{
+    String brand;
+    String color;
+    double price;
+
+    SmartWatch(String brand,String color,double price){
+        
+         this.brand=brand;       
+        this.color=color;
+        this.price=price;
+        
+    }
+
+
+}
+
+----------------------------
+
+class Mobile{
+    String name;
+    String color;
+
+    SmartWatch s;
+
+    Mobile(String name, String color){
+        this.name=name;
+        this.color=color;
+    }
+   
+   public void connectWatch(SmartWatch s){
+    if(this.s ==null){
+        this.s=s;
+        System.out.println("watch connected successfully);
+    }
+   }
+
+   public void watchDetails(){
+    if(this.s==null)
+    System.out.println("no watch connected to show details");
+
+    else{
+        System.out.println(s.brand);
+        System.out.println(s.color);
+        System.out.println(s.price);
+    }
+   }
+
+   public void removeWatch(){
+    if(this.s !=null)
+    {
+        this.s=null;
+        System.out.println("watch disconnect successfully");
+    }
+    else
+    System.out.println("no watch connected to disconnect");
+   }
+    
+
+}
+
+---------------
+class MobileDriver{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        Mobile m1 = new Mobile("Vivo","Ocean Blue");
+
+        boolean exit=true;
+
+        while(exit){
+            System.out.println("Enter Your choice : \n connect \n show details \n remove watch \n exit");
+
+            int choice = sc.nextInt();
+
+            switch(choice){
+                case 1:
+                {
+                 
+                System.out.println("Enter the brand:");
+                 String brand = sc.next();
+                
+                System.out.println("Enter the color:");
+                 String color = sc.next();
+
+                System.out.println("Enter the price:");
+                 double price = nextDouble();
+
+                 m1.connectWatch(new watch(brand,color,price));
+
+
+                }
+                break;
+
+                case 2:
+                {
+                    m1.watchDetails();
+                }
+                break;
+
+                case 3:
+                {
+                    m1.removeWatch();
+                }
+                break;
+                case 4:
+                {
+                    exit=false;
+                }
+                break;
+                default:
+                {
+                    System.out.println("Invalid choice");
+                }
+            }
+        }
+        
+    }
+}
+
+****************************************************
+
+5.What is Is-A relationship and how to achieve this ?
+
+Is-A relationship is a type of relationship in which one object inherite some property from other object or theoir parent class .
+we can achieve Is a relationship by using Inheritance concept.
+
+hare we use extends keyword to stablish relation between two class.\
+
+We have 5 types of inheritance--->
+------#Single Level Inheritance
+------#Multilevel Inheritance
+------#Hierarchical Inheritance
+------#Multiple Inheritance
+------#Hybrid Inheritance
+
+****************************************************
+
+6.What is Inheritance and what are the types we have?
+
+Inheritance is a one of the oops concept ,in which one class inherit some property from parent class.
+we use exdents keyword to achieve inheritance .
+Types-----
+------#Single Level Inheritance
+------#Multilevel Inheritance
+------#Hierarchical Inheritance
+------#Multiple Inheritance
+------#Hybrid Inheritance
+
+*************************************************
+
+7.How to achieve Is A relationship between two classes?
+To achieve is a relationship we use extends and implements keyword.
+
+8.
+

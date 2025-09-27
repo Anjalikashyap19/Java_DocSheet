@@ -1,0 +1,128 @@
+1.What is constructor ? what is the use of constructor?
+
+Constructor is special member of non static , it is Automatically call at the time of object creation.
+area present inside constructor is called as Non staic context.
+there is three basic work of a constructor 
+*load all non static member inside object.
+*execute non static initialize.
+*execute programmer writen instruction.
+
+we can say constructor is a special type of method but it does't have any return type.
+
+constructor name alwas should be equal to class name .
+we have two types of constructor base on argument--
+parameterized constructor 
+no argument or non parameterized constructor
+
+whenever we did't add any constructor in a program compiler will add no argument default constructor .
+
+**************************************************8
+
+2. Syntax to carete a constructor?
+
+for creating a constructor --
+
+[Access Modifier] Constructor name(should be same as class name)( followed by formal Arguments) {
+
+}.
+in this Access Modifier and formal Argument is optional .
+
+***************************************
+
+3. Based on Argument how many types of constructor Explain..?
+
+Base on the Argument constructor have two types ---
+parameterized and non parameterized also called no argument
+
+A constructor which is accepting any formal argument from the user is called parameterized constructor .
+
+A constructor without any formal Argument , is called no Argument constructor.
+
+*******************************
+
+4. Can we make constructor as private?
+
+Yes we can...
+
+**************
+
+5. What is constructor overloading in Java ? write a example..
+
+If a class having more than one constructor with the same name , then it is known as constructor overloading.
+
+we can achieve constructor overloading by these way--
+ by changing the data types of the formal  Argument .
+ by changing order of the argument.
+ By changing Number of the arguments.
+
+ example---
+
+ class Fruits
+ {
+    Fruits(int a, int b){
+        system.out.println("first constructor");
+    }
+    Fruits(int a, int b, int c){
+        system.out.println("second constructor called");
+    }
+
+    public staic void main(string[] args){
+        Fruits f1 =new Fruits(10,8);
+        Fruits f2 = new Fruits(11,9,6);
+      
+    }
+ }
+
+ output---
+ first Constructor
+ second Constructor called
+
+ Advantage ---
+ code reuseblity 
+ we can initialize object in defferent different way.
+
+ ****************************************************
+
+ 6. Constructor changing In java and Advantage . Write an Example...
+
+ Constructor changing in Java is nothing but calling a constructor inside a constructor is known as 
+ constructor changing. is is quite simillar to recursion concept .
+
+ Advantage of Constructor changing----
+ Reduce more lines of code.
+ Avoid Dublicate codes.
+
+ Example-----
+
+ class A{
+
+    A(){
+       System.out.println( " Hello from First");
+
+    }
+    A(int a,string b){
+        this();
+        System.out.println("hello from second"+a+" "+b);
+       
+
+    }
+    A(int a, int b, int c){
+        this(10,"anu");
+        System.out.println("hello from third"+a \n +b \n+c);
+       
+    }
+
+    public staic void main(string[] args){
+        System.out.println("start executing");
+        A a1=new A(10,20,19);
+
+    }
+ }
+
+ output----
+ start executing
+  hello from first
+  Hello from Second Constructor: 10 Anu
+   hello from third 10 anu
+
+

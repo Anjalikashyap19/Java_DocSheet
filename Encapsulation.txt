@@ -1,0 +1,168 @@
+1. What is Encapsulation?
+
+Encapsulation is one of the 4 pillars of oops .it is a process of binding the states and behaviours of an object together .
+by using encapsulation we can perform data hiding and restrict the anouthorized accesss of the data .
+
+Advantage ---
+data security
+stop unauthorized access of data.
+
+if we want to access the data we need to use helper methods (getter and setter).
+
+getter methods are use to fetch the data , the return type of getter method is same as the type of data which we are fetching .
+
+setter methods are use to modify or update the data , return type of setter method is void .
+
+we use private access modifier to achieve data hiding .
+
+*****************************************************
+
+2.how to achieve Encapsulation?
+
+To achieve Encapsulation We need to prifix our data members with private keyword.
+
+it is a keyword.
+it is also a access modifier.
+
+if a class have all its members prifix with private key words then it is known as fully encapsulated class , otherwise partially 
+encapsulated class.
+
+we use getter and setter methods to acheve indirect access of the data . 
+
+example---
+
+class  A{
+    private int id=10;
+    private String name="anu";
+
+    //getter
+    public int getid(){
+        return id;
+    }
+
+    //setter
+    public void setid(int id){
+        this.id=id;
+    }
+
+    //getter
+    public String getname(){
+        return name;
+    }
+    
+    //setter
+    
+    public void setname(String name){
+        this.name=name;
+    }
+}
+
+class ADriver 
+{
+    public static void main(String[] args){
+        A a = new A();
+       System.out.println( a.getid());
+        a.setid(12);
+       System.out.println( a.getname());
+        a.setname("anubhav");
+       System.out.println( a.getname());
+       System.out.println( a.getid());
+    }
+}
+
+output--
+10
+anu
+anubhav
+12
+
+******************************************************
+
+3.What is Advantage of Encapsulation?
+
+Encapsulation is basically use to restric unauthorized access of data.
+by using we stop direct access of data , but provide indirect access.
+for this we use private keyword
+by using encapsulation we achieve data hiding .
+
+*******************************************************
+
+4.What is DataHiding?
+
+Data hiding is a concept in which we restric our data from unauthorized access.
+data hiding can be achieved by encapsulation.
+data hiding restrict direct access of data , but we can access data indirectly by using helper method like getter and setter.
+data hiding improve security and mainteblity of data.
+
+*****************************************************
+
+5. How to achieve data hiding ?
+
+we can achieve data hiding by making the class members as private. and for acessing them we need to use getter an d setter method.
+
+************************************************
+
+6. Expalin About Private..
+
+private is a keyword.
+it is a access modifier also.
+we  can't able to access private data member outside the class.
+
+7.use of getter and setter method?
+
+getter and setter methods are also known as helper methods .
+and use for encapsulation concept in data hiding.
+ this methods provide indirect access of the data members from outsoide the class.
+
+getter method is use to fetch the data.
+and setter method is use to set the data or modify the data .
+
+********************************************************
+
+8.Advantage of Data hiding.
+
+*controlled access.
+*avoiding unauthorized access of data members.
+*data security.
+*easily maintainable.
+
+9.WAJP to achieve data hiding.
+
+class A{
+    private String name="Anjali";
+    private int Rollno =19;
+    private String subject="Maths";
+
+    //getter
+    public String getName(){
+        return name;
+    }
+    public int getRollno(){
+        return Rollno;
+    }
+    public String getSubject(){
+        return subject;
+    }
+
+    //setter
+    public void setSubject(String subject){
+        this.subject=subject;
+    }
+}
+
+class ADriver{
+    public static void main(String[] args){
+        A a= new A();
+       System.out.println(a.getName());
+       System.out.println(a.getRollno());
+       System.out.println(a.getSubject());
+       a.setSubject("Computer");
+       System.out.println(a.getSubject());
+    }
+}
+
+output--
+Anjali
+19
+Maths
+Computer

@@ -1,0 +1,122 @@
+1.Explain about Non static members
+
+None Static member is nothing but any member of class wich is not prefix with static keyword , is known as none static member .
+it has three type 
+*non static varialble 
+*non static method 
+*non static initializers------(single line non static initializers , multi line non static initializers)
+
+**single line non static initializers are those initializers which is declare and initialize in a single line only .
+
+**Multiline None static initialize having multiple lines in it with in a specific context or block .it is a bllock present in global area which is not prefixed with static keyword.
+
+
+non static varialble:--- A varialble which is present inside a global area and not prefixed with static keyword then it is known as non static variable .
+
+example-- int a (non staic variable a );
+static int a (staic variable a ).
+
+************************************************************************
+
+
+2.Explain about non static variables and their characteristics?
+
+A variable wich is declare inside a class block  and not prefixed with static keyword is known as non staic variable . 
+
+if we declare a non static variable and also initialize its value at the same line, it will become single line non static initialize.
+
+we can access non static variable inside a non static method but not static methode, for accessing it inside static context we go with the object reference .
+
+we can also call non static variable as object variable or instance variable .
+
+if we not initialize a value for non static variable, then it is initialize with default value inside the container .
+
+************************************************************************
+
+
+3.Explain about non static methods and their characteristics?
+
+ A Method which does't have static keyword in it , is call non staic method .
+
+ Non static method is also known as object or instance method .
+
+ inside a non static method we can access static or non staic variable directly.
+
+ To call a non static method from a staic context object creation is madatory.
+
+ ***************************************************************************
+
+
+ 4.Explain about non static initializers?
+
+ A Block in  wich  declaration in a same line and initialize with a value at the time of declaration only , then it is known as initializers.
+  and when it is not prefixed with staic keyword , it is called non static initializers.
+
+ It has two type: single line and multiline non static initialize.
+
+ *single line NSI is declare and initialize a variable in a same line .
+ *and MLNSI is a block wich is not prefixed with static keywords .
+
+ A initialize is a non callable member of a class.
+
+
+ ******************************************************************************* 
+
+5. How to access non static  variable within the class and outside the class?
+
+ A non static variable can be access by this way 
+ dirctly 
+ 
+ and by object reference 
+
+ with in the class we can access directly 
+  and outside the class we can go with  object creation  .
+
+  ***************
+
+  6.How to access non  static method within the class and outside the class?
+
+  to access non static method with in the same class we use method name , and from other class we can access through object reference.
+
+   ********************************8
+
+   7.What is object? And What is class?
+
+   in java object is a block of memory created inside a heap area or we can say also an object is anything which have a physical appearence and existence in real world it is having a state 
+   and beghaviour .
+   and a class is a blueprint of an object .
+   before creating a object we need to crteate blueprint of that object .that is class
+   class is a non primitive user define datatype .
+
+
+*************************************
+
+8. Explain object loading process?
+
+ object is a specific memory block wich is allocated by jvm inside heap area during runtime .
+ whenever we need to create new object we use this reference type .
+ New keyword is specifically use to carete this memory allocation inside heap area.
+ before object loading class will be loaded inside method area by classloader .
+
+ **************************
+
+ 9.Expalin About New keyword.
+
+ its a keyword .
+ it's a unary operator.
+ it returns newly created  object's address.
+ it allocates a memory block inside heap area.
+ it is use to carete object .
+
+ *******************************
+
+ 10.What is non Static Context?
+
+ The area which is present inside a non staic method and multiline non static initializer , is called as non static context .
+ inside a non static context we can directly access staic and non static member of class.it belongs to object.
+
+ 
+
+
+
+
