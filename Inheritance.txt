@@ -213,7 +213,7 @@ We have 5 types of inheritance--->
 6.What is Inheritance and what are the types we have?
 
 Inheritance is a one of the oops concept ,in which one class inherit some property from parent class.
-we use exdents keyword to achieve inheritance .
+we use exdents and implements keyword to achieve inheritance .
 Types-----
 ------#Single Level Inheritance
 ------#Multilevel Inheritance
@@ -224,7 +224,181 @@ Types-----
 *************************************************
 
 7.How to achieve Is A relationship between two classes?
-To achieve is a relationship we use extends and implements keyword.
+To achieve is a relationship we use extends keyword.
 
-8.
+***************************************************
+
+8.What is Single Level inheritance expain with example?
+
+when a parent class have only one child class , then it is known as single level inheritance.
+
+example----
+
+class Animal
+{
+    public void eat(){
+        System.out.println("Animal is eating");
+    }
+
+}
+
+class Dog extends Animal
+{
+    public void sound(){
+        System.out.println("Dog is barking");
+    }
+}
+
+class AnimalDriver{
+    public static void main(String[] args){
+        Animal a1=new Animal();
+        a1.eat();
+        a1.sound();
+    }
+}
+
+******************************************
+
+9.What is Multilevel Level inheritance expain with example?
+When one parent class have more than one child class at different levels ,it is known as multilevel inheritanace.
+
+example---
+
+class Animal
+{
+    public void eat(){
+        System.out.println("Animal is eating");
+    }
+
+}
+
+class Dog extends Animal
+{
+    public void sound(){
+        System.out.println("Dog is barking");
+    }
+}
+
+
+
+class puppy exdents Dog{
+    public void sound(){
+        System.out.println("puppy has sweet sound");
+    }
+    
+}
+
+class AnimalDriver{
+    public static void main(String[] args){
+        Animal a1=new Animal();
+        a1.eat();
+        a1.sound();
+    }
+}
+
+*****************************************
+
+9.What is Hierarchical  inheritance expain with example?
+
+when a parent class have more than one child class in same level then it ois known as , Hierarchical inheritanace.
+
+example----------
+
+
+
+class Animal
+{
+    public void eat(){
+        System.out.println("Animal is eating");
+    }
+
+}
+
+class Dog extends Animal
+{
+    public void sound(){
+        System.out.println("Dog is barking");
+    }
+}
+
+
+
+
+class Cat extends Animal{
+    public void sound(){
+        System.out.println("cat has mew sound");
+    }
+    
+}
+
+class AnimalDriver{
+    public static void main(String[] args){
+        Animal a1=new Animal();
+        a1.eat(); // Animal is eating
+        a1.sound();// dog is barking
+        Cat c2=  new Cat();
+        c2.sound();//cat has mew sound
+
+        
+
+    }
+}
+
+******************************************
+
+10.What is Hybrid  inheritance expain with example??
+
+when a parent class have more than one child class in some at same  level and some at different level then it ois known as , Hierarchical inheritanace. we can also say 
+Hybrid inheritanace have combination of two types of inheritanace.
+
+example----------
+
+
+
+
+class Animal
+{
+    public void eat(){
+        System.out.println("Animal is eating");
+    }
+
+}
+
+class Dog extends Animal
+{
+    public void sound(){
+        System.out.println("Dog is barking");
+    }
+}
+class Puppy exdents Dog{
+    public void sound(){
+        System.out.println("puppy has sweet sound");
+    }
+}
+
+
+
+class Cat extends Animal{
+    public void sound(){
+        System.out.println("cat has mew sound");
+    }
+    
+}
+
+class AnimalDriver{
+    public static void main(String[] args){
+        Animal a1=new Animal();
+        a1.eat(); // Animal is eating
+        a1.sound();// dog is barking
+        Cat c2=  new Cat();
+        c2.sound();//cat has mew sound
+
+        Puppy p1=new Puppy();
+        p1.sound();// puppy has sweet sound
+
+    }
+}
+
+
+
 
