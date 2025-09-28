@@ -8,3 +8,16 @@ Run time polymorphism
 
 compile time polymorphism also known as static polymorphism
 and run time polymorphism is also known as dynamic polymorphism
+
+2.Method binding?
+
+it is a connection between method call statement and method definition .
+
+3.What is compile time polymorphism and how to achieve it?
+when the binding is achieved at the time of compilation then it is known as 
+compile time polymorphism.
+for  achieving compile time polymorphism we have 4 ways--
+*By method overloading
+*By constructor overloading
+*By method shadowing
+*By variable shadowing
