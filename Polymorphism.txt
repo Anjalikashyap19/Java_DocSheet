@@ -1,2 +1,10 @@
 1.What is polymorphism and what are the types of it?
 
+polymorphism is one of the oops cocept in which one object can able to perform different different behaviour 
+at a same time.
+it has two type ----
+Compile time polymorphism
+Run time polymorphism
+
+compile time polymorphism also known as static polymorphism
+and run time polymorphism is also known as dynamic polymorphism
