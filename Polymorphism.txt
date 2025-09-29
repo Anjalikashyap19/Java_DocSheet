@@ -21,3 +21,32 @@ for  achieving compile time polymorphism we have 4 ways--
 *By constructor overloading
 *By method shadowing
 *By variable shadowing
+
+***************************************************
+4.What is method overloading ? WAJP for method overloading.
+it is a concept of compile time polymorphism .
+when a class have more than one method with the same name , but different formal arguments, then it is known as 
+method overloading.
+we can achieve method overloading by following ways------
+by changing  data types of the arguments.
+by changing order of the formal arguments.
+by changing no of formal arguments.
+
+example program------
+
+class A{
+    public void sum(int a,int b){
+        System.out.println("sum is"+(a+b));
+    }
+
+    public void sum(double a, double b){
+        System.out.println("sum is"+(a+b));
+    }
+
+    public static void main(String[] args){
+        A a1=new A();
+       a.sum(7,9);
+        a.sum(5.6,3.2);
+    }
+}
+
