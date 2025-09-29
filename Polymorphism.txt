@@ -50,3 +50,6 @@ class A{
     }
 }
 
+5.Explain any one real time example of methlod overloading concept?
+
+
