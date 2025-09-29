@@ -51,5 +51,38 @@ class A{
 }
 
 5.Explain any one real time example of methlod overloading concept?
+a very common real life example for method overloading is calculator, we use calculator for addition as well as multiple arthmatic calculation
+in that if we take one operation exaple such as addition, we can able to add 2 digits also 3 and so on, also we can able to add integer type 
+value as well as double and all.
+so we camn say that hare method overloading concept is well knowingly used.
 
+6.constructor overloading with example program?
+constructor overloading is also a concept of compile time polymorphism,when a class more than  one constructor with 
+the same name but different formal argiuments, we know it as constructor overloading.
+
+we can achieve it is by 3 different ways----
+*different number of formal arguments.
+*By using different data type.
+*By changing order of formal arguments.
+
+Example-----
+
+class A{
+    A(){
+        System.out.println("hello from start");
+    }
+    A(int a){
+        System.out.println(a);
+    }
+    A(String a){
+        System.out.println("Anjali Kr. Kashyap");
+    }
+
+    public static void main(String[] args){
+        A a1= new A();  // hello from start
+       
+       A a2=new A(19); // 19
+       A a3= new A("anjali"); // Anjali Kr. Kashyap
+    }
+}
 
