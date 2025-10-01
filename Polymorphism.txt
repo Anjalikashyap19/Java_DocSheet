@@ -86,3 +86,14 @@ class A{
     }
 }
 
+************************************************************
+
+7.Explain method Shadowing?WAJP also.
+when super class and sub class having static method with the same name and same signature , but different implementation
+then it is known as method shadowing.
+
+in method shadowing alwas we get output based on referemce type.
+it is only applicable for static methods.
+for acheiving method shadowing we need is a relationship.
+it is also known as method hiding.
+
