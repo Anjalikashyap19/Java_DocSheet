@@ -97,3 +97,34 @@ it is only applicable for static methods.
 for acheiving method shadowing we need is a relationship.
 it is also known as method hiding.
 
+example program--
+
+class Animal{
+    public static void eat(String a){
+        System.out.println("animal is eating "+a);
+
+    }
+
+
+}
+class Dog extends Animal{
+    public static void eat(String a){
+        System.out.println("dog is eating"+a);
+    }
+}
+
+class AnimalDriver{
+    public static void main(String args){
+
+        Animal A = new Animal();
+        A.eat("grass") ;// animal is eating grass
+
+        Dog d = new Dog();
+       d.eat("grass"); //dog is eating grass.
+    }
+}
+
+output--
+Animal is eating grass.
+dog is eating grass.
+
