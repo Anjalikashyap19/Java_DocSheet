@@ -129,3 +129,52 @@ output--
 Animal is eating grass.
 dog is eating grass.
 
+*********************************************
+8. what is variable shadowing ? explain with example.
+
+when a super class and sub class have variable with the same name but different value, then it is known as 
+variable shadowing.
+
+it is also known as variable hiding.
+it is applicable for both static and non static variable.
+to achieving variable shadowing we need is a relationship.
+the result is based on reference type.
+
+example--
+class Animal
+{
+    int a=10;
+    static int b=20;
+
+}
+
+class Dog extends Animal
+{
+    int a =12;
+    static int b=19;
+}
+
+class AnimalDriver{
+    public static void main(String[] args){
+
+        Animal a1=new Animal();
+        System.out.println(a1.a);
+
+        Dog d1=new Dog();
+        System.out.println( d1.a);//12
+        System.out.println( d1.b); //19
+
+        Animal a2=new Dog(); // upcasting
+        Dog d2=(Dog)a2;    //downcasting
+
+                 System.out.println(d2.a) ; //12
+                 System.out.println(d2.b);  //19
+    }
+}
+
+output--
+10
+12
+19
+12
+19
