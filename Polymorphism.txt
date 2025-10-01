@@ -119,7 +119,8 @@ class AnimalDriver{
         Animal A = new Animal();
         A.eat("grass") ;// animal is eating grass
 
-        Dog d = new Dog();
+        Animal A =new Dog();
+        Dog d=(Dog)A;
        d.eat("grass"); //dog is eating grass.
     }
 }
