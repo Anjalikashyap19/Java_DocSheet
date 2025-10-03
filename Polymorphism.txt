@@ -213,3 +213,37 @@ class B extends A
         a2.m1(); // hello
     }
 }
+
+***************************************
+10.Explain Method overriding .WAJP for this
+
+it is a concept which we use to achieve run time polymorphism.
+
+when we are not satiesfied with the implementaion of the parent method , then child class add their own implementaion
+for this . this concept is known as method overriding.
+
+IS A relationship is mandetory for this.
+output is based on object type.
+
+example ---
+
+class Food
+{
+    public void eat(){
+        System.out.println("i love momo");
+    }
+}
+
+class A extends Food
+{
+    public void eat(){
+        System.out.println("i love samosa");
+    }
+
+    public static void main(String[] args){
+        Food f1=new A();
+        f1.eat(); // i love samosa
+
+        A a1=new A(); // i love samosa
+    }
+}
