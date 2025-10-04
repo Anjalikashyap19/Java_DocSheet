@@ -247,3 +247,13 @@ class A extends Food
         A a1=new A(); // i love samosa
     }
 }
+
+*******************************************************
+
+11. WA real world example for method overriding.
+       
+A real world example of method overriding is animals and thier subclasses, in that we can make 
+a method inside a subclass and this method can overrid the parent  methods.
+
+12.explain about final keyword.
+
