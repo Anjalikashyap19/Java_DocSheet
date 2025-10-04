@@ -256,4 +256,6 @@ A real world example of method overriding is animals and thier subclasses, in th
 a method inside a subclass and this method can overrid the parent  methods.
 
 12.explain about final keyword.
-
+it is a keyword .
+whenever we make a members as a final then , we can't able to change the it.
+and we should initialize it at the time of declaration . 
