@@ -5,3 +5,5 @@ and only show the perticulatar information .
 
 2.i have conflict in my actule project so that i cant able to push from that folder , but i written
 code in that .
+
+i dont know how to solve this conflict issue now , i am dead .............
