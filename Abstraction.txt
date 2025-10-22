@@ -11,3 +11,10 @@ i dont know how to solve this conflict issue now , i am dead .............
 todys commit // unwanted commit 
 
 changes reflected
+
+
+kaam chalo  commit
+nothing to do just gona be crazy
+
+#include iostream again going to start
+
