@@ -3,30 +3,3 @@
 It is another piller of oops in which in that we hide the perticulatar information from the user .
 and only show the perticulatar information .
 
-2.i have conflict in my actule project so that i cant able to push from that folder , but i written
-code in that .
-
-i dont know how to solve this conflict issue now , i am dead .............
-
-todys commit // unwanted commit 
-
-changes reflected
-
-
-kaam chalo  commit
-nothing to do just gona be crazy
-
-#include iostream again going to start
-
-todays work hype 
-
-formality commit
-
-mmmmmmm
-cgjhh
-
-day 5 of having something to commit but cant commit 
-
-i will commit from tommorow
-
-sunday commit 
